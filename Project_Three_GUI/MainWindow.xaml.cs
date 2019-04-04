@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+
 namespace Project_Three_GUI
 {
     /// <summary>
@@ -21,8 +23,28 @@ namespace Project_Three_GUI
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {
+        {	// Initialize the window
             InitializeComponent();
-        }
-    }
+
+			//Everything else
+			Warn_Lbl.Visibility = Visibility.Hidden;
+		}
+		
+		private void Login_Btn_Click(object sender, RoutedEventArgs e)
+		{
+			
+			if (UserName_TBox.Text == "Home" && Password_TBox.Text == "1234")
+			{
+				Selection selection = new Selection();
+				selection.Show();
+				this.Close();
+			}
+			else
+			{
+				Warn_Lbl.Visibility = Visibility.Visible;
+				Warn_Lbl.Foreground = Brushes.Red;
+			}
+			
+		}
+	}
 }
