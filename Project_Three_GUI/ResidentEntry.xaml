@@ -1,0 +1,40 @@
+﻿<Window x:Class="Project_Three_GUI.ResidentEntry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_Three_GUI"
+        mc:Ignorable="d"
+        Title="ResidentEntry" Height="450" Width="800">
+	<Grid>
+
+		<Button x:Name="SaveRecord_Btn" Content="Button" HorizontalAlignment="Left" Height="31" Margin="113,360,0,0" VerticalAlignment="Top" Width="141" />
+
+		<GridSplitter HorizontalAlignment="Left" Height="355" Margin="397,36,0,0" VerticalAlignment="Top" Width="5" BorderBrush="#FF110D0D"/>
+
+		<!-- List of items for Current resident search-->
+		<Label Content="Search for Current Residents" HorizontalAlignment="Left" Margin="489,36,0,0" VerticalAlignment="Top" Width="242" FontSize="18"/>
+
+
+
+
+		<!-- List of new resident lables , radio buttons, and text boxes-->
+		<Label Content="Create New Resident" HorizontalAlignment="Left" Margin="98,36,0,0" VerticalAlignment="Top" Width="174" FontSize="18"/>
+
+		<Label Content="First Name:" HorizontalAlignment="Left" Margin="64,196,0,0" VerticalAlignment="Top" Width="78"/>
+		<Label Content="ID#:" HorizontalAlignment="Left" Margin="64,157,0,0" VerticalAlignment="Top"/>
+		<Label Content="Last Name:" HorizontalAlignment="Left" Margin="64,234,0,0" VerticalAlignment="Top"/>
+
+		<RadioButton x:Name="Athlete_Rdio" Content="Athlete" HorizontalAlignment="Left" Margin="53,98,0,0" VerticalAlignment="Top" />
+		<RadioButton x:Name="Emp_Rdio" Content="Student Emp" HorizontalAlignment="Left" Margin="283,98,0,0" VerticalAlignment="Top"/>
+		<RadioButton x:Name="Scholar_Rdio" Content="Scholarship" HorizontalAlignment="Left" Margin="161,98,0,0" VerticalAlignment="Top"/>
+		<TextBox x:Name="NewLName_TBox" HorizontalAlignment="Left" Height="23" Margin="147,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
+		<TextBox x:Name="NewFName_TBox" HorizontalAlignment="Left" Height="23" Margin="147,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" AcceptsTab="True"/>
+		<Label Content="ID #:" HorizontalAlignment="Left" Margin="64,157,0,0" VerticalAlignment="Top"/>
+		<TextBox x:Name="RoomNum_TBox" HorizontalAlignment="Left" Height="23" Margin="147,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+		<Label x:Name="NewRoom_Lbl" Content="Room #" HorizontalAlignment="Left" Margin="64,269,0,0" VerticalAlignment="Top"/>
+		<TextBox x:Name="RoomNum_TBox_Copy" HorizontalAlignment="Left" Height="23" Margin="147,306,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+		<Label x:Name="NewRoom_Lbl_Copy" Content="Floor #" HorizontalAlignment="Left" Margin="64,305,0,0" VerticalAlignment="Top"/>
+		<Label Content="" HorizontalAlignment="Left" Margin="147,157,0,0" VerticalAlignment="Top"/>
+	</Grid>
+</Window>
