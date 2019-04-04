@@ -15,7 +15,7 @@
 		<Button x:Name="NewRecord_Btn" Content="New Record" HorizontalAlignment="Left" Height="33" Margin="95,212,0,0" VerticalAlignment="Top" Width="186" Click="NewRecord_Btn_Click"/>
 		<TextBox x:Name="IDSearch_Box" HorizontalAlignment="Left" Height="23" Margin="561,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 		<Label Content="Search by ID" HorizontalAlignment="Left" Margin="451,134,0,0" VerticalAlignment="Top" Width="82"/>
-		<Button Content="Search" HorizontalAlignment="Left" Height="33" Margin="513,212,0,0" VerticalAlignment="Top" Width="186" Click="Button_Click"/>
+		<Button Content="Search" HorizontalAlignment="Left" Height="33" Margin="513,212,0,0" VerticalAlignment="Top" Width="186"/>
 
 		<!-- List of items for Current resident search-->
 

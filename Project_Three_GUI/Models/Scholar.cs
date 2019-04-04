@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Project_Three_GUI.Models
 {
-    class Employee : Resident
+    class Scholar : Resident
     {
+
     }
 }
