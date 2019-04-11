@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 
 
@@ -25,8 +26,6 @@ namespace Project_Three_GUI
         public MainWindow()
         {	// Initialize the window
             InitializeComponent();
-
-			//Everything else
 			Warn_Lbl.Visibility = Visibility.Hidden;
 		}
 		
@@ -35,6 +34,7 @@ namespace Project_Three_GUI
 			
 			if (UserName_TBox.Text == "Home" && Password_TBox.Text == "1234")
 			{
+			
 				Selection selection = new Selection();
 				selection.Show();
 				this.Close();

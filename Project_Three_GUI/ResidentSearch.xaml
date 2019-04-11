@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:Project_Three_GUI"
         mc:Ignorable="d"
         Title="ResidentSearch" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+	<Grid>
+		<DataGrid x:Name="DataGridResident" HorizontalAlignment="Left" Height="305" Margin="10,105,0,0" VerticalAlignment="Top" Width="774">
+			<DataGrid.Columns>
+				<DataGridTextColumn Binding="{Binding Res_ID}" Header="ID" Width="50"/>
+				<DataGridTextColumn Binding="{Binding Res_FName}" Header="F Name" Width="100"/>
+				<DataGridTextColumn Binding="{Binding Res_LName}" Header="L Name" Width="100"/>
+				<DataGridTextColumn Binding="{Binding Res_Cat}" Header="Status" Width="100"/>
+				<DataGridTextColumn Binding="{Binding Room_Num}" Header="Room Number" Width="100"/>
+				<DataGridTextColumn Binding="{Binding Floor_Num}" Header="Floor Number" Width="100"/>
+			</DataGrid.Columns>
+		</DataGrid>
+		<Button x:Name="ressearch_Back" Content="Back" HorizontalAlignment="Left" Margin="32,21,0,0" VerticalAlignment="Top" Width="119" Height="36" Click="Ressearch_Back_Click"/>
+
+	</Grid>
 </Window>

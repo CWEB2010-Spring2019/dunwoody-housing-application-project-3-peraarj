@@ -32,7 +32,9 @@ namespace Project_Three_GUI
 			this.Close();
 		}
 
-		private void Button_Click(object sender, RoutedEventArgs e)
+	
+
+		private void Search_All_Btn_Click(object sender, RoutedEventArgs e)
 		{
 			ResidentSearch search = new ResidentSearch();
 			search.Show();
